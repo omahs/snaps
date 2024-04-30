@@ -5,6 +5,6 @@
     "emitDeclarationOnly": true,
     "inlineSources": true,
     "sourceMap": true,
-    "module": "ES2020"
+    "module": "ES2022"
   }
 }
