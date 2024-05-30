@@ -26,7 +26,7 @@ import {
   printWithType,
   RECEIVED_COLOR,
 } from 'jest-matcher-utils';
-import { is } from 'superstruct';
+import { is } from '@metamask/superstruct';
 
 import { InterfaceStruct, SnapResponseStruct } from './internals';
 import type { SnapResponse } from './types';
