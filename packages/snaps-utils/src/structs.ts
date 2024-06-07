@@ -1,8 +1,4 @@
 import { union } from '@metamask/snaps-sdk';
-import type { NonEmptyArray } from '@metamask/utils';
-import { assert, isObject } from '@metamask/utils';
-import { bold, green, red } from 'chalk';
-import type { Failure } from '@metamask/superstruct';
 import {
   is,
   validate,
@@ -11,7 +7,10 @@ import {
   StructError,
   create,
 } from '@metamask/superstruct';
-import type { AnyStruct } from '@metamask/superstruct';
+import type { Failure, AnyStruct } from '@metamask/superstruct';
+import type { NonEmptyArray } from '@metamask/utils';
+import { assert, isObject } from '@metamask/utils';
+import { bold, green, red } from 'chalk';
 
 import { indent } from './strings';
 

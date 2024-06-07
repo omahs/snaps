@@ -1,6 +1,4 @@
 import { union, literal } from '@metamask/snaps-sdk';
-import { assert } from '@metamask/utils';
-import { bold, green, red } from 'chalk';
 import type { Struct } from '@metamask/superstruct';
 import superstruct, {
   size,
@@ -12,6 +10,8 @@ import superstruct, {
   union as superstructUnion,
   array,
 } from '@metamask/superstruct';
+import { assert } from '@metamask/utils';
+import { bold, green, red } from 'chalk';
 
 import {
   arrayToGenerator,
