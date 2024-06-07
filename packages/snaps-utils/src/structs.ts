@@ -10,7 +10,7 @@ import {
   Struct,
   StructError,
   create,
-} from 'superstruct';
+} from '@metamask/superstruct';
 import type { AnyStruct } from '@metamask/superstruct';
 
 import { indent } from './strings';

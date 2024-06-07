@@ -9,7 +9,7 @@ import {
   record,
   string,
   union,
-} from 'superstruct';
+} from '@metamask/superstruct';
 
 import type { InterfaceContext } from '../interface';
 

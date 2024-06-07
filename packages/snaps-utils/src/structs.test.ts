@@ -11,7 +11,7 @@ import superstruct, {
   validate,
   union as superstructUnion,
   array,
-} from 'superstruct';
+} from '@metamask/superstruct';
 
 import {
   arrayToGenerator,

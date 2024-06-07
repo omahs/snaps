@@ -1,10 +1,4 @@
-import {
-  hasProperty,
-  HexChecksumAddressStruct,
-  isPlainObject,
-  JsonStruct,
-} from '@metamask/utils';
-import type { Struct } from 'superstruct';
+import type { ObjectSchema, Struct } from '@metamask/superstruct';
 import {
   is,
   boolean,
@@ -17,8 +11,13 @@ import {
   record,
   string,
   tuple,
-} from 'superstruct';
-import type { ObjectSchema } from 'superstruct/dist/utils';
+} from '@metamask/superstruct';
+import {
+  hasProperty,
+  HexChecksumAddressStruct,
+  isPlainObject,
+  JsonStruct,
+} from '@metamask/utils';
 
 import type { Describe } from '../internals';
 import { literal, nullUnion, svg } from '../internals';
