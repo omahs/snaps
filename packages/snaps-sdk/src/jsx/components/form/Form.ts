@@ -13,7 +13,7 @@ import type { FieldElement } from './Field';
  * the event handler.
  */
 type FormProps = {
-  children: MaybeArray<FieldElement | ButtonElement>;
+  children: MaybeArray<FieldElement | ButtonElement> | null;
   name: string;
 };
 
