@@ -13,11 +13,13 @@ import type { FieldElement } from './Field';
  * the event handler.
  */
 type FormProps = {
-  children: MaybeArray<FieldElement | ButtonElement> | null;
+  children: MaybeArray<FieldElement | ButtonElement>;
   name: string;
 };
 
 const TYPE = 'Form';
+
+export const FORM_CHILD_TYPES = ['Field', 'Button'];
 
 /**
  * A form component, which is used to create a form.

@@ -13,14 +13,12 @@ import type { InputElement } from './Input';
 export type FieldProps = {
   label?: string | undefined;
   error?: string | undefined;
-  children:
-    | [InputElement, ButtonElement]
-    | InputElement
-    | DropdownElement
-    | null;
+  children: [InputElement, ButtonElement] | InputElement | DropdownElement;
 };
 
 const TYPE = 'Field';
+
+export const FIELD_CHILD_TYPES = ['Input', 'Dropdown', 'Button'];
 
 /**
  * A field component, which is used to create a form field. This component can
