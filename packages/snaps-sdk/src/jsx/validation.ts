@@ -37,6 +37,7 @@ import type {
   BoldElement,
   BoxElement,
   ButtonElement,
+  CellElement,
   CopyableElement,
   DividerElement,
   DropdownElement,
@@ -268,6 +269,17 @@ export const ValueStruct: Describe<ValueElement> = element('Value', {
 });
 
 /**
+ * A struct for the {@link ValueElement} type.
+ */
+export const CellStruct: Describe<CellElement> = element('Cell', {
+  image: string(),
+  title: string(),
+  description: string(),
+  value: string(),
+  valueExtra: string(),
+});
+
+/**
  * A struct for the {@link HeadingElement} type.
  */
 export const HeadingStruct: Describe<HeadingElement> = element('Heading', {
@@ -337,6 +349,7 @@ export const BoxChildStruct = nullUnion([
   SpinnerStruct,
   TextStruct,
   DropdownStruct,
+  CellStruct,
 ]);
 
 /**
@@ -368,6 +381,7 @@ export const JSXElementStruct: Describe<JSXElement> = nullUnion([
   DropdownStruct,
   OptionStruct,
   ValueStruct,
+  CellStruct,
 ]);
 
 /**
