@@ -17,25 +17,6 @@ export type BoxProps = {
 
 const TYPE = 'Box';
 
-export const BOX_CHILD_TYPES = [
-  'Button',
-  'Input',
-  'Form',
-  'Bold',
-  'Italic',
-  'Address',
-  'Box',
-  'Copyable',
-  'Divider',
-  'Heading',
-  'Image',
-  'Link',
-  'Row',
-  'Spinner',
-  'Text',
-  'Dropdown',
-];
-
 /**
  * A box component, which is used to group multiple components together.
  *
