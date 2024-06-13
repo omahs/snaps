@@ -145,9 +145,12 @@ function constructFormState(
   }
 
   const input = getFieldInput(component);
-  assertNameIsUnique(newState, input.props.name);
 
-  newState[input.props.name] = constructFormInputState(oldState, input, form);
+  if (input) {
+    assertNameIsUnique(newState, input.props.name);
+
+    newState[input.props.name] = constructFormInputState(oldState, input, form);
+  }
 
   return newState;
 }
