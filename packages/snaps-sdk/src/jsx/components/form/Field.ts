@@ -13,7 +13,11 @@ import type { InputElement } from './Input';
 export type FieldProps = {
   label?: string | undefined;
   error?: string | undefined;
-  children: [InputElement, ButtonElement] | InputElement | DropdownElement;
+  children:
+    | [InputElement, ButtonElement]
+    | InputElement
+    | DropdownElement
+    | null;
 };
 
 const TYPE = 'Field';
